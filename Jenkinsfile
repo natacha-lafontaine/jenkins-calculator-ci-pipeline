@@ -7,6 +7,7 @@ pipeline {
     stage('Compile') {
       steps {
         sh "mvn compile"
+        echo "made a change here"
       }
     }
     stage('Unit test') {
